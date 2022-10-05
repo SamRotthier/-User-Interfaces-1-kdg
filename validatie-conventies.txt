@@ -1,0 +1,12 @@
+.\index.html
+	Lang is not "nl"
+	[Outline] Level conflict: 88
+	[Outline] Multiple headings: 7
+.\html\ProductDetailsPage.html
+	Lang is not "nl"
+	[Outline] Level conflict: 32; 38; 65
+	[Outline] Multiple headings: 10; 28; 7
+.\html\ProductsPage.html
+	Lang is not "nl"
+	[Outline] Level conflict: 86
+	[Outline] Multiple headings: 10; 7
