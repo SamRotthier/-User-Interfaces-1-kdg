@@ -1,6 +1,14 @@
 .\index.html
 	Lang is not "nl"
-.\html\ProductDetailsPage.html
+.\html\ContactPage.html
+	Lang is not "nl"
+.\html\FAQPage.html
+	Lang is not "nl"
+.\html\ProductDetailsPageRaptor.html
+	Lang is not "nl"
+.\html\ProductDetailsPageTrex.html
+	Lang is not "nl"
+.\html\ProductDetailsPageTrexSkeleton.html
 	Lang is not "nl"
 .\html\ProductsPage.html
 	Lang is not "nl"
