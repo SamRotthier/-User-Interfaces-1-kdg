@@ -1,0 +1,71 @@
+:root{/* CSS HEX */
+--beau-blue: #d2e1e8ff;
+--bone: #d5d7caff;
+--grullo: #a49288ff;
+--cafe-au-lait: #a37d55ff;
+--raw-umber: #87684aff;
+}
+
+/*style body*/
+body{
+background-color: var(--raw-umber);
+    font-family: "Poor Richard", serif;
+}
+
+h1{
+    font-family: "Poor Richard", serif;
+    font-size: 90px;
+}
+h2{
+    font-family: "Poor Richard", serif;
+    font-size: 45px;
+}
+h3{
+    font-family: "Poor Richard", serif;
+    font-size: 30px;
+}
+p{
+    font-family: "Poor Richard", serif;
+    font-size: 23px;
+}
+
+
+/*hide titles*/
+.HiddenTitle{
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    left: -10000px;
+}
+
+/*style menu*/
+/*flex container*/
+#Menu ul{
+list-style-type: none;
+padding-left: 0;
+display: flex;
+}
+
+
+/*flex children*/
+#Menu ul li {
+    background-color: var(--cafe-au-lait);
+    flex-grow: 1;
+}
+
+#Menu li a {
+    text-decoration: none;
+    color: var(--bone);
+    padding: 10px 20px ;
+    display: block;
+
+}
+
+#Menu .SubMenu {
+    display: flex;
+    flex-direction: column;
+    padding-left:20px;
+    list-style-type:upper-roman;
+    text-align: left;
+}
