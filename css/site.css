@@ -1,34 +1,43 @@
 :root{/* CSS HEX */
---beau-blue: #d2e1e8ff;
---bone: #d5d7caff;
---grullo: #a49288ff;
---cafe-au-lait: #a37d55ff;
---raw-umber: #87684aff;
+    --beau-blue: #d2e1e8ff;
+    --bone: #d5d7caff;
+    --grullo: #a49288ff;
+    --cafe-au-lait: #a37d55ff;
+    --liver-chestnut: #957350ff;
+    --raw-umber: #87684aff;
+    --cafe-noir:#433425;
+    --liver-chestnut-2: #92765aff;
+    --beaver: #9c8269ff;
+    --grullo-2: #a58d77ff;
+    --grullo-3: #ad9783ff;
 }
 
 /*style body*/
 body{
-background-color: var(--raw-umber);
+    background-color: var(--raw-umber);
     font-family: "Poor Richard", serif;
 }
 
 h1{
-    font-family: "Poor Richard", serif;
     font-size: 90px;
 }
 h2{
-    font-family: "Poor Richard", serif;
     font-size: 45px;
 }
 h3{
-    font-family: "Poor Richard", serif;
     font-size: 30px;
 }
 p{
-    font-family: "Poor Richard", serif;
     font-size: 23px;
 }
 
+footer{
+    background-color: var(--cafe-noir);
+    text-decoration: none;
+}
+footer li a{
+    color: var(--bone);
+}
 
 /*hide titles*/
 .HiddenTitle{
@@ -42,11 +51,18 @@ p{
 /*style menu*/
 /*flex container*/
 #Menu ul{
-list-style-type: none;
-padding-left: 0;
-display: flex;
+    display: flex;
+    list-style-type: none;
+    border: solid 4px var(--grullo) ;
+    align-items: center;
+    text-align: center;
+    padding-left: 0;
+
 }
 
+#Menu .submenu{
+    display: none;
+}
 
 /*flex children*/
 #Menu ul li {
@@ -56,16 +72,18 @@ display: flex;
 
 #Menu li a {
     text-decoration: none;
-    color: var(--bone);
+    color: var(--beau-blue);
     padding: 10px 20px ;
     display: block;
-
+    border: solid var(--grullo) 1px;
 }
 
-#Menu .SubMenu {
-    display: flex;
-    flex-direction: column;
-    padding-left:20px;
-    list-style-type:upper-roman;
-    text-align: left;
+/*Hover over item*/
+#Menu li a:hover{
+    background-color: var(--grullo);
+    color: var(--bone);
+}
+
+#Menu ul .active {
+    background-color: var(--beaver);
 }

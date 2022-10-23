@@ -1,0 +1,78 @@
+.gheader{
+grid-area: header;
+}
+.gmain{
+    grid-area: main;
+}
+.gfooter{
+    grid-area: footer;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: left;
+
+}
+.gfooter ul{
+    list-style-type: none;
+}
+
+.gcontainer {
+    display: grid;
+    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    ". header ."
+    ". main ."
+    ". footer .";
+}
+
+
+.gmain{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "gsectiondescription"
+    "gsectionlatestproject"
+    "gsectiontestimonials"
+    "gsectionimportanse";
+    border: solid black 1px;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.gsectiondescription{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+.gsectiondescription ul{
+    list-style-type: none;
+}
+
+.gsectionlatestproject{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+.gsectiontestimonials{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+.gsectionimportanse{
+    border: solid black 1px;
+    border-radius: 10px;
+}
+
+
+
+.fTestimonials{
+    display: flex;
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+    gap: 2em;
+}
+.testimonialpanel{
+    border: solid black 1px;
+    padding: 10px;
+    border-radius: 10px;
+}
