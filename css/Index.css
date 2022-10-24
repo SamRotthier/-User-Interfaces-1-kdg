@@ -1,32 +1,20 @@
-.gheader{
-grid-area: header;
-}
-.gmain{
-    grid-area: main;
-}
-.gfooter{
-    grid-area: footer;
-    border: solid black 1px;
-    border-radius: 10px;
-    text-align: left;
-
-}
-.gfooter ul{
-    list-style-type: none;
-}
-
+/*Makes container grid*/
 .gcontainer {
     display: grid;
-    grid-template-columns: 1fr 10fr 1fr;
+    grid-template-columns: 1fr 20fr 1fr;
     grid-template-rows: auto;
     grid-template-areas:
     ". header ."
     ". main ."
     ". footer .";
 }
-
-
+/*styles header for grid*/
+.gheader{
+grid-area: header;
+}
+/*styles main for grid & adds nested grid for the underlaying sections*/
 .gmain{
+    grid-area: main;
     display: grid;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -35,34 +23,50 @@ grid-area: header;
     "gsectionlatestproject"
     "gsectiontestimonials"
     "gsectionimportanse";
-    border: solid black 1px;
     text-align: center;
     border-radius: 10px;
 }
+/*styles footer for grid*/
+.gfooter{
+    grid-area: footer;
+    border: solid black 1px;
+    border-radius: 10px;
+    text-align: left;
 
+}
+/*styles footer unordened list child for grid*/
+.gfooter ul{
+    list-style-type: none;
+}
+/*styles description section for nested grid*/
 .gsectiondescription{
+    grid-area: gsectiondescription;
     border: solid black 1px;
     border-radius: 10px;
 }
+/*styles description unordened list child section for nested grid*/
 .gsectiondescription ul{
     list-style-type: none;
 }
-
+/*styles last project section for nested grid*/
 .gsectionlatestproject{
+    grid-area: gsectionlatestproject;
     border: solid black 1px;
     border-radius: 10px;
 }
+/*styles testemonials section for nested grid*/
 .gsectiontestimonials{
+    grid-area: gsectiontestimonials;
     border: solid black 1px;
     border-radius: 10px;
 }
+/*styles importanse section for nested grid*/
 .gsectionimportanse{
+    grid-area: gsectionimportanse;
     border: solid black 1px;
     border-radius: 10px;
 }
-
-
-
+/*styles flexbox for testimonials*/
 .fTestimonials{
     display: flex;
     border: solid black 1px;
@@ -71,6 +75,7 @@ grid-area: header;
     text-align: center;
     gap: 2em;
 }
+/*styles seperate sections for testimonials*/
 .testimonialpanel{
     border: solid black 1px;
     padding: 10px;

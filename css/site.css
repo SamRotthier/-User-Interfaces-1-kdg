@@ -11,79 +11,77 @@
     --grullo-2: #a58d77ff;
     --grullo-3: #ad9783ff;
 }
-
 /*style body*/
 body{
     background-color: var(--raw-umber);
     font-family: "Poor Richard", serif;
 }
-
+/*style h1*/
 h1{
     font-size: 90px;
 }
+/*style h2*/
 h2{
     font-size: 45px;
 }
+/*style h3*/
 h3{
     font-size: 30px;
 }
+/*style p*/
 p{
     font-size: 23px;
 }
-
+/*style footer*/
 footer{
     background-color: var(--cafe-noir);
     text-decoration: none;
 }
+/*style list in footer*/
 footer li a{
     color: var(--bone);
 }
-
 /*hide titles*/
-.HiddenTitle{
+.hiddentitle{
     position: absolute;
     width: 1px;
     height: 1px;
     overflow: hidden;
     left: -10000px;
 }
-
-/*style menu*/
-/*flex container*/
-#Menu ul{
+/*style menu & add flex container*/
+#menu ul{
     display: flex;
     list-style-type: none;
     border: solid 4px var(--grullo) ;
     align-items: center;
     text-align: center;
     padding-left: 0;
-
 }
-
-#Menu .submenu{
+/*Hide Submenu untill milestone 2.2*/
+#menu .submenu{
     display: none;
 }
-
-/*flex children*/
-#Menu ul li {
+/*style menu un ordened list child*/
+#menu ul li {
     background-color: var(--cafe-au-lait);
     flex-grow: 1;
 }
-
-#Menu li a {
+/*style menu list child*/
+#menu li a {
     text-decoration: none;
     color: var(--beau-blue);
     padding: 10px 20px ;
     display: block;
     border: solid var(--grullo) 1px;
 }
-
 /*Hover over item*/
-#Menu li a:hover{
+#menu li a:hover{
     background-color: var(--grullo);
     color: var(--bone);
 }
-
-#Menu ul .active {
+/*Highlights active page*/
+#menu ul .active {
     background-color: var(--beaver);
 }
+
