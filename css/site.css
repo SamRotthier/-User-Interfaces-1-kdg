@@ -32,6 +32,11 @@ h3{
 p{
     font-size: 23px;
 }
+/*style boarders*/
+.border{
+    border: solid black 1px;
+    border-radius: 10px;
+}
 /*style footer*/
 footer{
     background-color: var(--cafe-noir);
@@ -84,4 +89,48 @@ footer li a{
 #menu ul .active {
     background-color: var(--beaver);
 }
-
+/*Makes container grid*/
+.gcontainer{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "header"
+    "main"
+    "footer";
+    padding-left: 50px;
+    padding-right: 50px;
+}
+/*styles header for grid*/
+.gheader{
+    grid-area: header;
+}
+/*styles main for grid & adds nested grid for the underlaying sections*/
+.gmain{
+    grid-area: main;
+}
+/*styles footer for grid*/
+.gfooter{
+    grid-area: footer;
+    text-align: left;
+}
+/*styles footer unordened list child for grid*/
+.gfooter ul{
+    list-style-type: none;
+}
+/*styles the breadcrumb*/
+.gbreadcrumb{
+    grid-area:gbreadcrumb;
+}
+/*styles the ordened list of the breadcrumb*/
+.gbreadcrumb ol{
+    display: flex;
+    justify-content:space-evenly;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+/*styles the list items of the breadcrumb*/
+.gbreadcrumb li a{
+    text-decoration: none;
+    color: var(--beau-blue);
+}
