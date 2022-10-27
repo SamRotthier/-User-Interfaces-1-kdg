@@ -1,0 +1,18 @@
+/*styles main for grid & adds nested grid for the underlaying sections*/
+.gmain{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "gbreadcrumb"
+    "gcontactinfo";
+}
+/*styles product info section for nested grid*/
+.gcontactinfo{
+    grid-area:gcontactinfo;
+    align-content: center;
+    text-align: center;
+}
+.info{
+    display: flex;
+}
