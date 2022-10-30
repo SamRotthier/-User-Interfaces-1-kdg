@@ -34,134 +34,141 @@
             <li><a href="ProductsPage.html">Products Page</a></li>
         </ol>
     </section>
+    <input id="inch5" type="checkbox" checked>
+    <input id="inch10" type="checkbox" checked>
+    <input id="inch15" type="checkbox" checked>
+    <input id="inch20" type="checkbox" checked>
+
+    <div class="filter">
     <section>
         <h2>Filter size</h2>
-        <ol>
-            <li>5 inch</li>
-            <li>10 inch</li>
-            <li>15 inch</li>
-            <li>20 inch</li>
-        </ol>
+        <label for="inch5" id="lblinch5">5inch</label><br>
+        <label for="inch10" id="lblinch10">10inch</label><br>
+        <label for="inch15" id="lblinch15">15inch</label><br>
+        <label for="inch20" id="lblinch20">20inch</label><br>
     </section>
+    </div>
 
+<div class="products">
     <section class="fproducts">
         <h2>Dinos:</h2>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <a href="ProductDetailsPageTrex.html">
                 <h3>Trex</h3>
-                <img src="../media/Product_Listing_Pictures/trex.png" alt="Image of the Trex sticker"/>
+                <img src="../media/Product_Listing_Pictures/trex.png"  alt="Image of the Trex sticker"/>
                 <p> Price : 10$ </p>
             </a>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch10">
             <a href="ProductDetailsPageTrexSkeleton.html">
             <h3>Trex Skeleton</h3>
-            <img src="../media/Product_Listing_Pictures/trex_skeleton.png" alt="Image of the Trex Skeleton sticker"/>
+            <img src="../media/Product_Listing_Pictures/trex_skeleton.png"  alt="Image of the Trex Skeleton sticker"/>
             <p> Price : 10$ </p>
             </a>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch15">
             <a href="ProductDetailsPageRaptor.html">
             <h3>Raptor</h3>
-            <img src="../media/Product_Listing_Pictures/raptor.png" alt="Image of the Raptor sticker"/>
+            <img src="../media/Product_Listing_Pictures/raptor.png"  alt="Image of the Raptor sticker"/>
             <p> Price : 10$ </p>
             </a>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch20">
             <h3>therizinosaurus</h3>
-            <img src="../media/Product_Listing_Pictures/therizinosaurus.png" alt="Image of the Therizinosaurus sticker"/>
+            <img src="../media/Product_Listing_Pictures/therizinosaurus.png"  alt="Image of the Therizinosaurus sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch20">
             <h3>Therizinosaurus</h3>
-            <img src="../media/Product_Listing_Pictures/Dino_Design_PSD.png" alt="Image of the Therizinosaurus sticker"/>
+            <img src="../media/Product_Listing_Pictures/Dino_Design_PSD.png"  alt="Image of the Therizinosaurus sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <h3>Mosasaurus</h3>
-            <img src="../media/Product_Listing_Pictures/mosasaurus.png" alt="Image of the Mosasaurus sticker"/>
+            <img src="../media/Product_Listing_Pictures/mosasaurus.png"  alt="Image of the Mosasaurus sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <h3>Mosasaurus</h3>
             <img src="../media/Product_Listing_Pictures/mosasaurus_skeleton.png" alt="Image of the Mosasaurus Skeleton sticker"/>
             <p> Price : 10$ </p>
         </section>
 
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch10">
             <h3>Raptor Skeleton</h3>
             <img src="../media/Product_Listing_Pictures/raptor_skeleton.png" alt="Image of the Raptor Skeleton sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <h3>Therizinosaurus Skeleton</h3>
-            <img src="../media/Product_Listing_Pictures/therizinosaurus_skeleton.png" alt="Image of the Therizinosaurus Skeleton sticker"/>
+            <img src="../media/Product_Listing_Pictures/therizinosaurus_skeleton.png"  alt="Image of the Therizinosaurus Skeleton sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <h3>Carnotaurus</h3>
-            <img src="../media/Product_Listing_Pictures/king_of_hearts_carnotaurus.png" alt="Image of the Carnotaurus sticker"/>
+            <img src="../media/Product_Listing_Pictures/king_of_hearts_carnotaurus.png"  alt="Image of the Carnotaurus sticker"/>
             <p> Price : 10$ </p>
         </section>
     </section>
 
     <section class="fproducts">
         <h2>Animals:</h2>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch15">
             <h3>Elephant</h3>
-            <img src="../media/Product_Listing_Pictures/Elephant_Realistic.png" alt="Image of the Elephant sticker"/>
+            <img src="../media/Product_Listing_Pictures/Elephant_Realistic.png"  alt="Image of the Elephant sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <H3>Turtle</H3>
-            <img src="../media/Product_Listing_Pictures/Turtle_PNG.png" alt="Image of the Turtle sticker"/>
+            <img src="../media/Product_Listing_Pictures/Turtle_PNG.png"  alt="Image of the Turtle sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch20">
             <H3>Axolotl</H3>
-            <img src="../media/Product_Listing_Pictures/Axolotl_PNG.png" alt="Image of the Axolotl sticker"/>
+            <img src="../media/Product_Listing_Pictures/Axolotl_PNG.png"  alt="Image of the Axolotl sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch20">
             <H3>Elephant and it's mother</H3>
-            <img src="../media/Product_Listing_Pictures/Mother_Child.png" alt="Image of the Elephant and it's mother sticker"/>
+            <img src="../media/Product_Listing_Pictures/Mother_Child.png"  alt="Image of the Elephant and it's mother sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <H3>Red Panda</H3>
-            <img src="../media/Product_Listing_Pictures/RedPanda_PNG.png" alt="Image of the Red Panda sticker"/>
+            <img src="../media/Product_Listing_Pictures/RedPanda_PNG.png"  alt="Image of the Red Panda sticker"/>
             <p> Price : 10$ </p>
         </section>
     </section>
 
     <section class="fproducts">
         <H2>Fantasy:</H2>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch15">
             <h3>Knight1</h3>
-            <img src="../media/Product_Listing_Pictures/king_of_diamonds.png" alt="Image of the Knight1 sticker"/>
+            <img src="../media/Product_Listing_Pictures/king_of_diamonds.png"  alt="Image of the Knight1 sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch20">
             <h3>Knight2</h3>
-            <img src="../media/Product_Listing_Pictures/jack_of_clubs.png" alt="Image of the Knight2 sticker"/>
+            <img src="../media/Product_Listing_Pictures/jack_of_clubs.png"  alt="Image of the Knight2 sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <h3>Knight3</h3>
-            <img src="../media/Product_Listing_Pictures/jack_diamonds.png" alt="Image of the Knight3 sticker"/>
+            <img src="../media/Product_Listing_Pictures/jack_diamonds.png"  alt="Image of the Knight3 sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <h3>Knight4</h3>
-            <img src="../media/Product_Listing_Pictures/queen_diamonds.png" alt="Image of the Knight4 sticker"/>
+            <img src="../media/Product_Listing_Pictures/queen_diamonds.png"  alt="Image of the Knight4 sticker"/>
             <p> Price : 10$ </p>
         </section>
-        <section class="fproductsitem borderProduct">
+        <section class="fproductsitem borderProduct" data-filter="inch5">
             <h3>Knight5</h3>
-            <img src="../media/Product_Listing_Pictures/queen_hearts.png" alt="Image of the Knight5 sticker"/>
+            <img src="../media/Product_Listing_Pictures/queen_hearts.png"  alt="Image of the Knight5 sticker"/>
             <p> Price : 10$ </p>
         </section>
     </section>
+</div>
 </main>
 
 <footer class="gfooter border">

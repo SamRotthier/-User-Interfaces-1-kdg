@@ -32,11 +32,6 @@ h3{
 p{
     font-size: 23px;
 }
-/*style boarders*/
-.border{
-    border: solid black 1px;
-    border-radius: 10px;
-}
 /*style footer*/
 footer{
     background-color: var(--cafe-noir);
@@ -45,6 +40,11 @@ footer{
 /*style list in footer*/
 footer li a{
     color: var(--bone);
+}
+/*style boarders*/
+.border{
+    border: solid black 1px;
+    border-radius: 10px;
 }
 /*hide titles*/
 .hiddentitle{
@@ -58,17 +58,15 @@ footer li a{
 #menu ul{
     display: flex;
     list-style-type: none;
-    border: solid 4px var(--grullo) ;
     align-items: center;
     text-align: center;
     padding-left: 0;
-}
-/*Hide Submenu untill milestone 2.2*/
-#menu .submenu{
-    display: none;
+    flex-grow: 1;
+    position: relative;
 }
 /*style menu un ordened list child*/
 #menu ul li {
+    border: solid 4px var(--grullo) ;
     background-color: var(--cafe-au-lait);
     flex-grow: 1;
 }
@@ -81,7 +79,7 @@ footer li a{
     border: solid var(--grullo) 1px;
 }
 /*Hover over item*/
-#menu li a:hover{
+#menu li:hover >a{
     background-color: var(--grullo);
     color: var(--bone);
 }
@@ -89,6 +87,7 @@ footer li a{
 #menu ul .active {
     background-color: var(--beaver);
 }
+
 /*Makes container grid*/
 .gcontainer{
     display: grid;
@@ -133,4 +132,19 @@ footer li a{
 .gbreadcrumb li a{
     text-decoration: none;
     color: var(--beau-blue);
+}
+
+/*Styling of the submenu*/
+#menu .submenu{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    width: 22%;
+}
+#menu .submenu li{
+  padding: 3px;
+}
+
+#menu li:hover a ~.submenu{
+    display: flex;
 }

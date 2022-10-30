@@ -14,8 +14,32 @@
 .borderProduct{
     box-shadow: var(--liver-chestnut-2) 0 30px 60px -12px inset;
 }
+/*styles the individual products in the the flex box*/
+.fproductsitem{
+    display: none;
+}
 /*styles links of the individual products in the the flex box*/
 .fproductsitem a{
     text-decoration: none;
     color: var(--beau-blue);
+}
+/*styles the input (checkbox)*/
+input{
+    display: none;
+}
+
+/*makes the labels that are linked with a checkbox change color*/
+input#inch5:checked ~ .filter label#lblinch5,
+input#inch10:checked ~ .filter label#lblinch10,
+input#inch15:checked ~ .filter label#lblinch15,
+input#inch20:checked ~ .filter label#lblinch20 {
+    color: var(--bone);
+}
+
+/*when checkbox is clicked, displays the according item*/
+input#inch5:checked ~ .products .fproductsitem[data-filter~="inch5"],
+input#inch10:checked ~ .products .fproductsitem[data-filter~="inch10"],
+input#inch15:checked ~ .products .fproductsitem[data-filter~="inch15"],
+input#inch20:checked ~ .products .fproductsitem[data-filter~="inch20"] {
+    display: initial;
 }

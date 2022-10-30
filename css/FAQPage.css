@@ -7,12 +7,12 @@
     "gbreadcrumb"
     "gquestion";
 }
-/*styles options section for nested grid*/
+/*styles questions section for nested grid*/
 .gquestion{
     grid-area:gquestion;
     padding: 10px;
 }
-/*styles cart section for nested grid*/
+/*styles details section*/
 details{
     box-shadow: var(--liver-chestnut-2) 0 30px 60px -12px inset;
     border-radius: 10px;
@@ -20,9 +20,11 @@ details{
     font-size: 25px;
     text-align: center;
 }
+/*styles the unordered list from the details section */
 details ul li{
     list-style-type: none;
 }
+/*styles the title */
 .title{
     text-align: center;
     text-decoration-line: underline;

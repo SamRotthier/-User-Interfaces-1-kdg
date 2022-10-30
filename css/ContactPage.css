@@ -7,12 +7,15 @@
     "gbreadcrumb"
     "gcontactinfo";
 }
-/*styles product info section for nested grid*/
+/*styles contact info section for nested grid*/
 .gcontactinfo{
     grid-area:gcontactinfo;
     align-content: center;
     text-align: center;
-}
-.info{
     display: flex;
+    padding: 10px;
+}
+/*styles the info*/
+.info{
+padding: 10px;
 }
