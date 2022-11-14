@@ -4,15 +4,21 @@
     grid-template-columns: auto;
     grid-template-rows: auto;
     grid-template-areas:
-    "gbreadcrumb"
-    "gcontactinfo";
+    "gbreadcrumb gbreadcrumb"
+    "gcontactinfo gmap";
 }
 /*styles contact info section for nested grid*/
 .gcontactinfo{
     grid-area:gcontactinfo;
     align-content: center;
     text-align: center;
-    display: flex;
+    padding: 10px;
+}
+/*styles contact info section for nested grid*/
+.gmap{
+    grid-area:gmap;
+    align-content: center;
+    text-align: center;
     padding: 10px;
 }
 /*styles the info*/
