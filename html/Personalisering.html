@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Customization Page</title>
+  <link rel="stylesheet" href="../css/site.css">
+  <link rel="stylesheet" href="../css/Personalisering.css">
+  <script src="../script/form_validation.js"></script>
+</head>
+<body>
+<header class="gheader">
+  <h1 class="hiddentitle">Little Red Studio</h1>
+  <nav id="menu">
+    <h2 class="hiddentitle">Navigation</h2>
+    <ul>
+      <li> <a href="ProductsPage.html">Products Page</a>
+        <ul class="submenu">
+          <li><a href="ProductDetailsPageTrex.html">Trex</a></li>
+          <li><a href="ProductDetailsPageTrexSkeleton.html">Trex Skeleton</a></li>
+          <li><a href="ProductDetailsPageRaptor.html">Raptor</a></li>
+        </ul>
+      </li>
+      <li> <a href="FAQPage.html">FAQ</a></li>
+      <li> <a href="ContactPage.html">Contact</a></li>
+      <li  class="active"> <a href="Personalisering.html">Customization</a></li>
+      <li> <a href="../index.html">Home</a></li>
+    </ul>
+  </nav>
+</header>
+<main  class="gmain">
+  <section class="gbreadcrumb border">
+    <h2 class="hiddentitle">Breadcrumbs</h2>
+    <ol>
+      <li><a href="../index.html">Home</a></li>
+      <li><a href="ContactPage.html">Contact Page</a></li>
+    </ol>
+  </section>
+
+  <section>
+    <form id="customisationpart" action="Bevestiging.html" method="GET">
+      <fieldset>
+        <legend>Personal Information</legend>
+        <div class="forminput">
+          <label for="name"> Name: </label>
+            <input type="text" id="name" name="name" required placeholder="Example: Jhon Do">
+        </div>
+        <div class="forminput">
+          <label for="phonenumber"> Phone Number:</label>
+            <input type="tel" id="phonenumber" name="number" required placeholder="Example: +32425522265">
+        </div>
+        <div class="forminput">
+          <label for="address"> Address:</label>
+            <input type="text" id="address" name="address" required placeholder="Example: Jhon Do">
+
+        </div>
+        <div class="forminput">
+          <label for="email"> Email Address:</label>
+            <input type="email" id="email" name="email" required placeholder="Example: Jhon Do">
+        </div>
+      </fieldset>
+      <fieldset>
+        <legend>Product</legend>
+        <div class="forminput">
+        <label for="product">Which product:</label>
+          <select id="product" name="product">
+            <optgroup label="Dino">
+              <option value="Trex">Trex</option>
+              <option value="Trex Skeleton">Trex Skeleton</option>
+              <option value="Raptor">Raptor</option>
+            </optgroup>
+          </select>
+        </div>
+        <label for="extra">Extra requests:</label>
+          <textarea id="extra" name="request"></textarea>
+      </fieldset>
+      <input type="submit">
+    </form>
+
+  </section>
+</main>
+
+<footer class="gfooter border">
+  <section>
+    <h2 class="hiddentitle">Extra links</h2>
+    <ul>
+      <li> <a href="">Legal info</a></li>
+      <li> <a href="">Return policy</a></li>
+      <li> <a href="ContactPage.html">Contact</a></li>
+      <li> <a href="">social media links</a></li>
+    </ul>
+  </section>
+</footer>
+</body>
+</html>
