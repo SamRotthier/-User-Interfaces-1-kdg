@@ -2,10 +2,15 @@
 .forminput{
     display: flex;
     justify-content: space-between;
+    padding: 10px 25px;
+    margin: 4px 2px;
 }
 
-.forminput input, .forminput select{
-    width: 30em;
+.forminput input, .forminput select,.forminput textarea{
+    width: 40em;
+    background: var(--grullo);
+    border-radius: 15px;
+
 }
 
 #customisationpart{
@@ -14,7 +19,24 @@
 }
 textarea{
     display: block;
-    width: 100%;
     height: 10em;
+
 }
 
+validinput{
+    background-color: green;
+}
+fieldset{
+    border-radius: 25px;
+}
+form{
+    color: var(--bone);
+
+}
+.formbutton{
+    margin-top: 10px;
+    width: 250px;
+    border-radius: 5px;
+    height: 75px;
+    background: var(--grullo);
+}

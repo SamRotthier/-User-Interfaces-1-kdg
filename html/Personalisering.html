@@ -5,7 +5,8 @@
   <title>Customization Page</title>
   <link rel="stylesheet" href="../css/site.css">
   <link rel="stylesheet" href="../css/Personalisering.css">
-  <script src="../script/form_validation.js"></script>
+  <link rel="stylesheet" href="../css/form_validation.css">
+  <script src="../script/form_validation.js" defer></script>
 </head>
 <body>
 <header class="gheader">
@@ -70,10 +71,12 @@
             </optgroup>
           </select>
         </div>
+        <div class="forminput">
         <label for="extra">Extra requests:</label>
           <textarea id="extra" name="request"></textarea>
+        </div>
       </fieldset>
-      <input type="submit">
+      <input class="formbutton" value="Submit" type="submit">
     </form>
 
   </section>
