@@ -5,31 +5,32 @@
     padding: 10px 25px;
     margin: 4px 2px;
 }
-
+/*styles the nested elements of the forminput*/
 .forminput input, .forminput select,.forminput textarea{
     width: 40em;
     border-radius: 15px;
 
 }
-
+/*styles form*/
 #customisationpart{
     max-width: 50em;
     margin: 10px auto;
 }
+/*styles text area*/
 textarea{
     display: block;
     height: 10em;
 
 }
-
-
+/*styles the fieldsey*/
 fieldset{
     border-radius: 25px;
 }
+/*styles form element*/
 form{
     color: var(--bone);
-
 }
+/*styles button*/
 .formbutton{
     margin-top: 10px;
     width: 250px;
@@ -37,16 +38,24 @@ form{
     height: 75px;
     background: var(--grullo);
 }
-
+/*styles p element*/
+p{
+    font-size: 20px;
+    margin-left: 10em;
+}
+/*styles toggelable background*/
 .validinputmail{
     background: green;
 }
+/*styles toggelable background*/
 .nonvalidinputmail{
     background: white;
 }
+/*styles toggelable background*/
 .validinputname{
     background: green;
 }
+/*styles toggelable background*/
 .nonvalidinputname{
     background: white;
 }

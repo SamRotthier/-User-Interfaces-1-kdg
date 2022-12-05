@@ -1,6 +1,7 @@
+//Starts the scripts on load
 window.addEventListener('load', () => validations())
 
-
+//validation scripts get called here and given the right elements
 function validations(){
     const name = document.getElementById('name');
     name.addEventListener('blur',() => ValidateName(name))
@@ -9,6 +10,7 @@ function validations(){
     email.addEventListener('change',() => ValidateEmail(email))
 }
 
+//validation of the name
 function ValidateName(name)
 {
     const validationName= /[ ]+[A-z]+|[A-z]+[ ]+/;
@@ -18,23 +20,26 @@ function ValidateName(name)
         return true
     }
     name.classList.toggle('nonvalidinputname')
-    //alert("You have entered an invalid email address!")
+    const element = document.getElementById('errorname')
+    element.innerHTML = "you have trailins spaces or an incomplete name";
     return false;
 }
 
+//validation of the email
 function ValidateEmail(mail)
 {
     const validationMailAdress= /^[A-z\-]+\.{1}[A-z\-]+[.{1}[A-z\-]*@(student.)*kdg.be/;
     if (validationMailAdress.test(mail.value))
     {
-        console.log("yay")
         mail.classList.toggle('validinputmail')
         return true
     }
     mail.classList.toggle('nonvalidinputmail')
-    //alert("You have entered an invalid email address!")
+    const element = document.getElementById('errormail')
+    element.innerHTML = "the given mail is not correct";
     return false;
 }
+
 
 
 
