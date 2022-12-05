@@ -1,42 +1,40 @@
+window.addEventListener('load', () => validations())
 
 
-
-
-window.addEventListener('change', () => init())
-
-function init(){
+function validations(){
     const name = document.getElementById('name');
-    const phonenumber = document.getElementById('phonenumber');
-    ValidatiePhoneNumber(phonenumber);
-    const address = document.getElementById('address');
-    const email = document.getElementById('email');
-    ValidateEmail(email);
+    name.addEventListener('blur',() => ValidateName(name))
+
+    const email = document.getElementById('mail');
+    email.addEventListener('change',() => ValidateEmail(email))
 }
 
-
-function ValidateEmail(mail)
+function ValidateName(name)
 {
-    const validationMailAdress= /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/;
-    if (validationMailAdress.test(email))
+    const validationName= /[ ]+[A-z]+|[A-z]+[ ]+/;
+    if (validationName.test(name.value))
     {
-        console.log('test')
-        mail.classList(validinput)
-        return true;
+        name.classList.toggle('validinputname')
+        return true
     }
-    alert("You have entered an invalid email address!")
+    name.classList.toggle('nonvalidinputname')
+    //alert("You have entered an invalid email address!")
     return false;
 }
 
-function ValidatiePhoneNumber(inputtxt)
+function ValidateEmail(mail)
 {
-    const validationNumber = /^\d{10}$/;
-    if(inputtxt.value.match(validationNumber))
+    const validationMailAdress= /^[A-z\-]+\.{1}[A-z\-]+[.{1}[A-z\-]*@(student.)*kdg.be/;
+    if (validationMailAdress.test(mail.value))
     {
-        return true;
+        console.log("yay")
+        mail.classList.toggle('validinputmail')
+        return true
     }
-    else
-    {
-        alert("You have entered an invalid number!");
-        return false;
-    }
+    mail.classList.toggle('nonvalidinputmail')
+    //alert("You have entered an invalid email address!")
+    return false;
 }
+
+
+

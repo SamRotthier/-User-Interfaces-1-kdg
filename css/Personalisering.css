@@ -8,7 +8,6 @@
 
 .forminput input, .forminput select,.forminput textarea{
     width: 40em;
-    background: var(--grullo);
     border-radius: 15px;
 
 }
@@ -23,9 +22,7 @@ textarea{
 
 }
 
-validinput{
-    background-color: green;
-}
+
 fieldset{
     border-radius: 25px;
 }
@@ -39,4 +36,17 @@ form{
     border-radius: 5px;
     height: 75px;
     background: var(--grullo);
+}
+
+.validinputmail{
+    background: green;
+}
+.nonvalidinputmail{
+    background: white;
+}
+.validinputname{
+    background: green;
+}
+.nonvalidinputname{
+    background: white;
 }
