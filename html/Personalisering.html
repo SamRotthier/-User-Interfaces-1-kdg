@@ -45,10 +45,9 @@
         <div class="forminput">
           <label for="name"> Name: </label>
           <input type="text" id="name" name="name" required placeholder="Example: Jhon Do">
-        </div>
-        <div>
           <p id="errorname"></p>
         </div>
+
         <div class="forminput">
           <label for="phonenumber"> Phone Number:</label>
           <input type="tel" id="phonenumber" name="phonenumber" minlength="10" pattern="04[0-9]{8}" placeholder="Example: 0425522265">
@@ -61,11 +60,9 @@
         <div class="forminput">
           <label for="mail"> Email Address:</label>
           <input type="email" id="mail" name="mail" required placeholder="Example: Jhon Do">
-
-        </div>
-        <div>
           <p id="errormail"></p>
         </div>
+
       </fieldset>
       <fieldset>
         <legend>Product</legend>
@@ -84,7 +81,8 @@
           <textarea id="extra" name="request" maxlength="500"></textarea>
         </div>
       </fieldset>
-      <input class="formbutton" id="submit" value="Submit" type="submit">
+      <input class="formbutton" id="submit" value="submit" type="submit">
+      <p id="errorsubmit"></p>
     </form>
 
   </section>

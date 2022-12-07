@@ -4,6 +4,7 @@
     justify-content: space-between;
     padding: 10px 25px;
     margin: 4px 2px;
+    flex-wrap: wrap;
 }
 /*styles the nested elements of the forminput*/
 .forminput input, .forminput select,.forminput textarea{

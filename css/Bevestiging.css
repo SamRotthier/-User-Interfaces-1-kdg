@@ -1,3 +1,9 @@
 .details{
     padding: 5px;
 }
+.OnOneLine{
+display: flex ;
+}
+.divide{
+    margin-right: 15px;
+}
