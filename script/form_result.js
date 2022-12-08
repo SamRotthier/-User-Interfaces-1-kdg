@@ -2,7 +2,7 @@
 const query = window.location.search;
 //splits it into parameters
 const searchParams = new URLSearchParams(query);
-
+//method to fill in the required data
 function ConfirmationInfo(label){
     const param = searchParams.get(label);
     const element = document.getElementById(label);
@@ -11,8 +11,7 @@ function ConfirmationInfo(label){
     }
 }
 
-//fills in the name
-
+//fills in the data
 ConfirmationInfo("name");
 ConfirmationInfo("phonenumber");
 ConfirmationInfo("mail");

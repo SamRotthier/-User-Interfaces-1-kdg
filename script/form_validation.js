@@ -1,5 +1,4 @@
 //Starts the scripts on load
-
 window.addEventListener('load', validations);
 
 
@@ -58,6 +57,7 @@ function ValidateEmail()
     }
 }
 
+//validates if the submit button is allowed
 function formValidation(event){
     const errorsubmit = document.getElementById('errorsubmit');
 
