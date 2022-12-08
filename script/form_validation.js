@@ -1,21 +1,28 @@
 //Starts the scripts on load
-window.addEventListener('load', () => validations());
+
+window.addEventListener('load', validations);
+
+
 
 //validation scripts get called here and given the right elements
 function validations(){
     const name = document.getElementById('name');
-    name.addEventListener('blur',() => ValidateName(name));
+    name.addEventListener('blur', ValidateName);
 
     const email = document.getElementById('mail');
-    email.addEventListener('input',() => ValidateEmail(email));
+    email.addEventListener('input', ValidateEmail);
+
+    const form = document.querySelector("form")
+    form.addEventListener("submit", formValidation)
 }
 
+
 //validation of the name
-function ValidateName(name)
+function ValidateName()
 {
-    const validationName= /[ ]+[A-z]+|[A-z]+[ ]+/;
+    let name = document.getElementById('name');
     const element = document.getElementById('errorname');
-    if (name.value.trim().length === name.value.length)
+    if (name.value.trim().length === name.value.length && name.value.length !== 0)
     {
         name.classList.remove('nonvalidinputname');
         name.classList.add('validinputname');
@@ -26,16 +33,15 @@ function ValidateName(name)
     name.classList.remove('validinputname');
     name.classList.add('nonvalidinputname');
     element.innerHTML = "you have trailins spaces or an incomplete name";
-    //const submit = document.getElementById('submit');
-    //submit.preventDefault();
     return false;
     }
 }
 
 //validation of the email
-function ValidateEmail(mail)
+function ValidateEmail()
 {
     const validationMailAdress= /^[A-z\-]+\.{1}[A-z\-]+[.{1}[A-z\-]*@(student.)*kdg.be/;
+    let mail = document.getElementById('mail');
     const element = document.getElementById('errormail');
     if (validationMailAdress.test(mail.value))
     {
@@ -48,8 +54,15 @@ function ValidateEmail(mail)
     mail.classList.remove('validinputmail');
     mail.classList.add('nonvalidinputmail');
     element.innerHTML = "the given mail is not correct";
-    //const submit = document.getElementById('submit');
-    //submit.preventDefault();
     return false;
+    }
+}
+
+function formValidation(event){
+    const errorsubmit = document.getElementById('errorsubmit');
+
+    if (!ValidateName() || !ValidateEmail()) {
+        errorsubmit.innerHTML = "Not all fields are filled in (correctly)";
+        event.preventDefault();
     }
 }
