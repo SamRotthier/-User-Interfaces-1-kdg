@@ -14,45 +14,42 @@ function validations(){
 function ValidateName(name)
 {
     const validationName= /[ ]+[A-z]+|[A-z]+[ ]+/;
-    if (validationName.test(name.value))
+    const element = document.getElementById('errorname');
+    if (name.value.trim().length === name.value.length)
     {
+        name.classList.remove('nonvalidinputname');
         name.classList.add('validinputname');
+        element.innerHTML = "";
         return true;
     }
+    else{
+    name.classList.remove('validinputname');
     name.classList.add('nonvalidinputname');
-    const element = document.getElementById('errorname');
     element.innerHTML = "you have trailins spaces or an incomplete name";
-    const submit = document.getElementById('submit');
-    submit.preventDefault();
+    //const submit = document.getElementById('submit');
+    //submit.preventDefault();
     return false;
+    }
 }
 
 //validation of the email
 function ValidateEmail(mail)
 {
     const validationMailAdress= /^[A-z\-]+\.{1}[A-z\-]+[.{1}[A-z\-]*@(student.)*kdg.be/;
+    const element = document.getElementById('errormail');
     if (validationMailAdress.test(mail.value))
     {
+        mail.classList.remove('nonvalidinputmail');
         mail.classList.add('validinputmail');
+        element.innerHTML = "";
         return true
     }
+    else{
+    mail.classList.remove('validinputmail');
     mail.classList.add('nonvalidinputmail');
-    const element = document.getElementById('errormail');
     element.innerHTML = "the given mail is not correct";
-    const submit = document.getElementById('submit');
-    submit.preventDefault();
+    //const submit = document.getElementById('submit');
+    //submit.preventDefault();
     return false;
-}
-
-function validation (regex,element,errorText,elementById,cssTag ){
-    if (regex.test(element.value))
-    {
-        element.classList.add(cssTag);
-        return true
     }
-    element.classList.add('nonvalidinputmail');
-    const receivedElement = document.getElementById(elementById);
-    receivedElement.innerHTML = errorText;
-    formSubmit();
-    return false;
 }
