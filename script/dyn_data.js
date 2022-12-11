@@ -1,4 +1,6 @@
-const Producten =[
+const Categories = ["Dinos", "Animals", "Fantasy"]
+
+const Products =[
     Dinos = [
         {Name: 'Trex',
             Description: '',
