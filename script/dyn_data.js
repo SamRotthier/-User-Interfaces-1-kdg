@@ -1,7 +1,6 @@
-const Categories = ["Dinos", "Animals", "Fantasy"]
+const Categories = [{Id:1,Category:"Dinos"}, {Id:2,Category:"Animals"}, {Id:3,Category:"Fantasy"}]
 
 const Products =[
-    Dinos = [
         {Name: 'Trex',
             Description: '\'This is a hand drawn illustration of a Trex.\\n\' +\n' +
                 '                \'It is from the poker card set jurassic Downfall.\'',
@@ -12,7 +11,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'ProductDetailsPageTrex.html',
-            Size:'5inch'
+            Size:'5inch',
+            Id:1
         },
         {Name: 'Trex Skeleton',
             Description: '\'This is a hand drawn illustration of a Trex Skeleton.\\n\' +\n' +
@@ -24,7 +24,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'ProductDetailsPageTrexSkeleton.html',
-            Size:'10inch'
+            Size:'10inch',
+            Id:1
         },
         {Name: 'Raptor',
             Description: 'This is a hand drawn illustration of a Raptor.\n' +
@@ -36,7 +37,8 @@ const Products =[
                 'Now you are all set!',
             Price:'30$',
             Link:'ProductDetailsPageRaptor.html',
-            Size:'15inch'
+            Size:'15inch',
+            Id:1
         },
         {Name: 'Raptor Skeleton',
             Description: '\'This is a hand drawn illustration of a Raptor Skeleton.\\n\' +\n' +
@@ -48,7 +50,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:1
         },
         {Name: 'Therizinosaurus',
             Description: '\'This is a hand drawn illustration of a Therizinosaurus.\\n\' +\n' +
@@ -60,7 +63,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'20inch'
+            Size:'20inch',
+            Id:1
         },
         {Name: 'Therizonosaurus 2',
             Description: '\'This is a hand drawn illustration of a Therizinosaurus.\\n\' +\n' +
@@ -72,7 +76,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'20inch'
+            Size:'20inch',
+            Id:1
         },
         {Name: 'Therizinosaurus Skeleton',
             Description: '\'This is a hand drawn illustration of a Therizinosaurus Skeleton.\\n\' +\n' +
@@ -84,7 +89,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:1
         },
         {Name: 'Mosasaurus',
             Description: '\'This is a hand drawn illustration of a Mosasaurus.\\n\' +\n' +
@@ -96,7 +102,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:1
         },
         {Name: 'Mosasaurus_Skeleton',
             Description: '\'This is a hand drawn illustration of a Mosasaurus Skeleton.\\n\' +\n' +
@@ -108,7 +115,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:1
         },
         {Name: 'Carnotaurus',
             Description: '\'This is a hand drawn illustration of a Carnotaurus.\\n\' +\n' +
@@ -120,10 +128,9 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:1
         },
-    ],
-    Animals = [
         {Name: 'Elephant',
             Description: '\'This is an illustration of an Elephant.\'',
             Image: '../media/Product_Listing_Pictures/Elephant_Realistic.png',
@@ -133,7 +140,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'15inch'
+            Size:'15inch',
+            Id:2
         },
         {Name: 'Turtle',
             Description: '\'This is an illustration of a Turtle.\'',
@@ -144,7 +152,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:2
         },
         {Name: 'Axolotl',
             Description: '\'This is an illustration of an Axolotl.\'',
@@ -155,7 +164,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'20inch'
+            Size:'20inch',
+            Id:2
         },
         {Name: 'Elephant and Mother',
             Description: '\'This is an illustration of an Elephant and its mother.\'',
@@ -166,7 +176,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'20inch'
+            Size:'20inch',
+            Id:2
         },
         {Name: 'Red Panda',
             Description: '\'This is an illustration of a Red Panda.\'',
@@ -177,10 +188,9 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
-        }
-    ],
-    Fantasy = [
+            Size:'5inch',
+            Id:2
+        },
         {Name: 'Knight1',
             Description: '\'This is an illustration of a Knight.\'',
             Image: '../media/Product_Listing_Pictures/king_of_diamonds.png',
@@ -190,7 +200,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'15inch'
+            Size:'15inch',
+            Id:3
         },
         {Name: 'Knight2',
             Description: '\'This is an illustration of a Knight.\'',
@@ -201,7 +212,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'20inch'
+            Size:'20inch',
+            Id:3
         },
         {Name: 'Knight3',
             Description: '\'This is an illustration of a Knight.\'',
@@ -212,7 +224,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:3
         },
         {Name: 'Knight4',
             Description: '\'This is an illustration of a Knight.\'',
@@ -223,7 +236,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:3
         },
         {Name: 'Knight5',
             Description: '\'This is an illustration of a Knight.\'',
@@ -234,8 +248,8 @@ const Products =[
                 'Now you are all set!',
             Price:'10$',
             Link:'',
-            Size:'5inch'
+            Size:'5inch',
+            Id:3
         }
-    ]
 
 ]
